@@ -20,11 +20,12 @@ span{
     align-items: center;
     padding: 10px 20px;  /* Reducimos el padding para dar más espacio */
     background-color: #111111;
-    /* position: fixed; */
+    position: fixed;
     /* width: 100%; */
     z-index: 100;
     top: 0;
     left: 0;  /* Para asegurarnos de que la barra cubra todo el ancho de la pantalla */
+    right: 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
   
