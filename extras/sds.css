@@ -20,8 +20,8 @@ span{
     align-items: center;
     padding: 10px 20px;  /* Reducimos el padding para dar más espacio */
     background-color: #111111;
-    position: fixed;
-    width: 100%;
+    /* position: fixed; */
+    /* width: 100%; */
     z-index: 100;
     top: 0;
     left: 0;  /* Para asegurarnos de que la barra cubra todo el ancho de la pantalla */
@@ -56,7 +56,7 @@ span{
   }
   
   .navbar ul li {
-    margin-left: 20px;  /* Reducimos el espacio entre los elementos del menú */
+    margin-left: 40px;  /* Reducimos el espacio entre los elementos del menú */
   }
   
   .navbar ul li a {
