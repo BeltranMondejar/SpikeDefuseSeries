@@ -21,7 +21,7 @@ span{
     padding: 10px 20px;  /* Reducimos el padding para dar más espacio */
     background-color: #111111;
     position: fixed;
-    width: 97%;
+    width: 100%;
     z-index: 100;
     top: 0;
     left: 0;  /* Para asegurarnos de que la barra cubra todo el ancho de la pantalla */
