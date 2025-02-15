@@ -18,7 +18,16 @@
         <img src="extras/Logo_sin_fondo.png" alt="Logo Torneo Valorant" class="logo-img">
         Spike Defuse Series
       </div>
+
       <ul>
+        <li>
+          <div class="switch-container">
+            <label class="switch">
+              <input type="checkbox" id="toggle-switch">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </li>
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#about">Acerca de</a></li>
         <li><a href="#teams">Equipos</a></li>
@@ -392,67 +401,74 @@
       </p>
       <form method="POST" class="registration-form" id="registration-form">
         <div class="registration-content">
-        <div class="form-column">
-          <div class="form-group">
-            <h3>Información Equipo</h3>
-            <label for="name">Nombre del Encargado <span>*</span></label>
-            <input type="text" id="name" name="name" placeholder="Nombre y Apellidos" required>
+          <div class="form-column">
+            <div class="form-group">
+              <h3>Información Equipo</h3>
+              <label for="name">Nombre del Encargado <span>*</span></label>
+              <input type="text" id="name" name="name" placeholder="Nombre y Apellidos" required>
+            </div>
+            <div class="form-group">
+              <label for="discord">Discord <span>*</span></label>
+              <input type="text" id="discord" name="discord" placeholder="Nombre de Usuario" required>
+            </div>
+            <div class="form-group">
+              <label for="alias">Abreviatura del Equipo <span>*</span></label>
+              <input type="text" id="alias" name="alias" maxlength="4" placeholder="Max 4 caracteres" required>
+            </div>
+            <div class="form-group">
+              <label for="team">Nombre del Equipo <span>*</span></label>
+              <input type="text" id="team" name="team" placeholder="Nombre de Equipo" required>
+            </div>
+            <div class="form-group">
+              <label for="rank">Media Rango Equipo <span>*</span></label>
+              <select id="rank" name="rank" required>
+                <option value="" disabled selected>Selecciona rango (Asc - Radiant)</option>
+                <option value="Ascendente">Ascendente</option>
+                <option value="Inmortal">Inmortal</option>
+                <option value="Radiant">Radiant</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Manager</label>
+              <input type="text" id="idManager" name="idManager" placeholder="ID Manager #tag (Opcional)"
+                pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="discord">Discord <span>*</span></label>
-            <input type="text" id="discord" name="discord" placeholder="Nombre de Usuario" required>
-          </div>
-          <div class="form-group">
-            <label for="alias">Abreviatura del Equipo <span>*</span></label>
-            <input type="text" id="alias" name="alias" maxlength="4" placeholder="Max 4 caracteres" required>
-          </div>
-          <div class="form-group">
-            <label for="team">Nombre del Equipo <span>*</span></label>
-            <input type="text" id="team" name="team" placeholder="Nombre de Equipo" required>
-          </div>
-          <div class="form-group">
-            <label for="rank">Media Rango Equipo <span>*</span></label>
-            <select id="rank" name="rank" required>
-              <option value="" disabled selected>Selecciona rango (Asc - Radiant)</option>
-              <option value="Ascendente">Ascendente</option>
-              <option value="Inmortal">Inmortal</option>
-              <option value="Radiant">Radiant</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="">Manager</label>
-            <input type="text" id="idManager" name="idManager" placeholder="ID Manager #tag (Opcional)" pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$">
+          <div class="form-column">
+            <div class="form-group">
+              <h3>Información Jugadores</h3>
+              <label for="">Jugador 1 <span>*</span></label>
+              <input type="text" id="idJugador1" name="idJugador1" placeholder="ID Jugador #tag"
+                pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
+            </div>
+            <div class="form-group">
+              <label for="">Jugador 2 <span>*</span></label>
+              <input type="text" id="idJugador2" name="idJugador2" placeholder="ID Jugador #tag"
+                pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
+            </div>
+            <div class="form-group">
+              <label for="">Jugador 3 <span>*</span></label>
+              <input type="text" id="idJugador3" name="idJugador3" placeholder="ID Jugador #tag"
+                pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
+            </div>
+            <div class="form-group">
+              <label for="">Jugador 4 <span>*</span></label>
+              <input type="text" id="idJugador4" name="idJugador4" placeholder="ID Jugador #tag"
+                pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
+            </div>
+            <div class="form-group">
+              <label for="">Jugador 5 <span>*</span></label>
+              <input type="text" id="idJugador5" name="idJugador5" placeholder="ID Jugador #tag"
+                pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
+            </div>
+            <div class="form-group">
+              <label for="">Entrenador</label>
+              <input type="text" id="idCoach" name="idCoach" placeholder="ID Entrenador #tag (Opcional)"
+                pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$">
+            </div>
           </div>
         </div>
-        <div class="form-column">
-          <div class="form-group">
-            <h3>Información Jugadores</h3>
-            <label for="">Jugador 1 <span>*</span></label>
-            <input type="text" id="idJugador1" name="idJugador1" placeholder="ID Jugador #tag" pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
-          </div>
-          <div class="form-group">
-            <label for="">Jugador 2 <span>*</span></label>
-            <input type="text" id="idJugador2" name="idJugador2" placeholder="ID Jugador #tag" pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
-          </div>
-          <div class="form-group">
-            <label for="">Jugador 3 <span>*</span></label>
-            <input type="text" id="idJugador3" name="idJugador3" placeholder="ID Jugador #tag" pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
-          </div>
-          <div class="form-group">
-            <label for="">Jugador 4 <span>*</span></label>
-            <input type="text" id="idJugador4" name="idJugador4" placeholder="ID Jugador #tag" pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
-          </div>
-          <div class="form-group">
-            <label for="">Jugador 5 <span>*</span></label>
-            <input type="text" id="idJugador5" name="idJugador5" placeholder="ID Jugador #tag" pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$" required>
-          </div>
-          <div class="form-group">
-            <label for="">Entrenador</label>
-            <input type="text" id="idCoach" name="idCoach" placeholder="ID Entrenador #tag (Opcional)" pattern="^(?=.*[a-zA-Z0-9]+#.*[a-zA-Z0-9]+).+$">
-          </div>
-        </div>
-      </div>
-      <button type="submit" id="submit-btn" class="register-btn disabled">Registrarse</button>
+        <button type="submit" id="submit-btn" class="register-btn disabled">Registrarse</button>
       </form>
     </div>
   </section>
