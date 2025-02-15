@@ -8,6 +8,19 @@ document.querySelectorAll('nav a').forEach(anchor => {
       });
     });
   });
+
+  // Funcion comprobar Switch
+  document.addEventListener("DOMContentLoaded", function () {
+    const switchToggle = document.getElementById("toggle-switch");
+  
+    switchToggle.addEventListener("change", function () {
+      if (switchToggle.checked) {
+        console.log("Activado");
+      } else {
+        console.log("Desactivado");
+      }
+    });
+  });
   
   // Simulación de un calendario básico en la sección de agenda (Schedule)
   const calendarContainer = document.getElementById('calendar');
